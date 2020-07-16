@@ -33,7 +33,8 @@ python \
 python-pip \
 sudo \
 && yum -y autoremove \
-&& yum clean all
+&& yum clean all \
+&& rm -rf /var/cache/yum/*
 
 # Install ansible.
 RUN pip install ansible
