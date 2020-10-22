@@ -29,15 +29,15 @@ epel-release \
 initscripts \
 && yum -y update \
 && yum -y install \
-python \
-python-pip \
+python3 \
+python3-pip \
 sudo \
 && yum -y autoremove \
 && yum clean all \
 && rm -rf /var/cache/yum/*
 
 # Install ansible.
-RUN pip install ansible
+RUN pip3 install ansible
 
 # Create ansible directory and copy ansible inventory file.
 RUN mkdir /etc/ansible
