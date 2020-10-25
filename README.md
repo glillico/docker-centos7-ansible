@@ -1,6 +1,6 @@
 # CentOS 7 Docker Image for Ansible Testing
 
-[![CI](https://github.com/glillico/docker-centos7-ansible/workflows/CI/badge.svg)](https://github.com/glillico/docker-centos7-ansible/actions?query=workflow%3ACI)
+[![CI](https://github.com/glillico/docker-centos7-ansible/workflows/Latest/badge.svg)](https://github.com/glillico/docker-centos7-ansible/actions?query=workflow%3ALatest) [![CI](https://github.com/glillico/docker-centos7-ansible/workflows/Python3/badge.svg)](https://github.com/glillico/docker-centos7-ansible/actions?query=workflow%3APython3)
 
 A docker container using CentOS 7 with Ansible installed for playbook and role testing.
 
