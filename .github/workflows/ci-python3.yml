@@ -1,5 +1,5 @@
 ---
-name: CI Python3
+name: CI-Python3
 on:
   pull_request:
   push:
