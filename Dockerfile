@@ -37,7 +37,7 @@ sudo \
 && rm -rf /var/cache/yum/*
 
 # Install ansible.
-RUN pip install ansible
+RUN pip install ansible 'cryptography==3.3.2'
 
 # Create ansible directory and copy ansible inventory file.
 RUN mkdir /etc/ansible
