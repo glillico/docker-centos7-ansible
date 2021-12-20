@@ -36,6 +36,10 @@ sudo \
 && yum clean all \
 && rm -rf /var/cache/yum/*
 
+# Upgrade pip & setuptools.
+RUN pip install --upgrade 'pip<21.0.0' \
+&& pip install --upgrade setuptools
+
 # Install ansible.
 RUN pip install 'ansible<5.0.0' 'cryptography==3.3.2' 'jinja2<3.0.0' 'markupsafe<2.0.0' 'packaging<21.0' 'PyYAML<6.0' 'pyparsing<3.0.0'
 
