@@ -8,6 +8,13 @@ RUN yum -y update \
 && yum clean all \
 && yum -y autoremove
 
+# Update systemd to provide cgroupv2 support.
+# See https://maciej.lasyk.info/2016/Dec/16/systemd-231-latest-in-centos-7-thx-to-facebook/ for details.
+RUN curl https://copr.fedorainfracloud.org/coprs/jsynacek/systemd-backports-for-centos-7/repo/epel-7/jsynacek-systemd-backports-for-centos-7-epel-7.repo -o /etc/yum.repos.d/jsynacek-systemd-centos-7.repo \
+&& yum -y update systemd \
+&& yum clean all \
+&& yum -y autoremove
+
 # Configure systemd.
 # See https://hub.docker.com/_/centos/ for details.
 RUN (cd /lib/systemd/system/sysinit.target.wants/; for i in *; do [ $i == systemd-tmpfiles-setup.service ] || rm -f $i; done); \
