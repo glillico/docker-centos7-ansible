@@ -44,7 +44,7 @@ sudo \
 && rm -rf /var/cache/yum/*
 
 # Upgrade pip & setuptools.
-RUN pip install --upgrade 'pip<21.0.0' \
+RUN pip --trusted-host pypi.python.org install --upgrade 'pip<21.0.0' \
 && pip install --upgrade setuptools
 
 # Install ansible.
