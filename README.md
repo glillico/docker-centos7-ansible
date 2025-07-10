@@ -1,5 +1,7 @@
 # CentOS 7 Docker Image for Ansible Testing
 
+DEPRECATED - CentOS 7 is End Of Life (EOL) as of June 30th 2024.
+
 [![latest](https://github.com/glillico/docker-centos7-ansible/workflows/latest/badge.svg)](https://github.com/glillico/docker-centos7-ansible/actions?query=workflow%3Alatest) [![python3](https://github.com/glillico/docker-centos7-ansible/workflows/python3/badge.svg)](https://github.com/glillico/docker-centos7-ansible/actions?query=workflow%3Apython3)
 
 A docker container using CentOS 7 with Ansible installed for playbook and role testing.
